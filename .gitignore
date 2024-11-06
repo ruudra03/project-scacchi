@@ -1,0 +1,25 @@
+# ignore 'system' files
+.git
+.svn
+.hg
+CVS
+.DS_Store
+Thumbs.db
+# END
+
+# ignore irrelevant files
+._*
+.vscode
+# END
+
+# ignore 'files' here
+*.txt
+# END
+
+# ignore 'folders' here
+
+# END
+
+# un-ignore exceptions here
+
+# END
