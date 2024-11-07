@@ -1,0 +1,15 @@
+{
+    "restartable": "rs",
+    "verbose": true,
+    "ignore": [
+        "dist"
+    ],
+    "watch": [
+        "src",
+        "package.json"
+    ],
+    "ext": "ts, css, html, json",
+    "events": {
+        "restart": "npm run build"
+    }
+}

@@ -1,0 +1,30 @@
+/* GOOGLE FONTS
+
+=> Sour Gummy Font Styles (check all styles @ github.com/eifetx/Sour-Gummy-Fonts)
+    Roman + Italic
+    Font Weight: 100-900
+    Fixed Width: Normal 100
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* END */
+
+.font-sg {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-variation-settings: "wdth" 100;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-900 {
+    font-weight: 500;
+}

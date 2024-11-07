@@ -1,0 +1,30 @@
+{
+  "name": "scacchi-api",
+  "version": "1.0.0",
+  "description": "scacchi server package",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && npx nodemon --config 'dist/config/nodemon.json' dist/server.js",
+    "prebuild": "npx del dist/assets",
+    "build": "npx tsc",
+    "postbuild": "npm run cpy-css && npm run cpy-html && npm run cpy-png",
+    "cpy-css": "npx cpy '../../../src/assets/css/*.css' . --cwd=dist/assets/css",
+    "cpy-html": "npx cpy '../../../src/assets/views/*.html' . --cwd=dist/assets/views",
+    "cpy-json": "npx cpy '../../../src/assets/config/*.json' . --cwd=dist/assets/config",
+    "cpy-png": "npx cpy '../../../src/assets/images/*.png' . --cwd=dist/assets/images"
+  },
+  "author": "ruudra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "cpy-cli": "^5.0.0",
+    "del-cli": "^6.0.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

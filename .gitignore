@@ -12,14 +12,22 @@ Thumbs.db
 .vscode
 # END
 
-# ignore 'files' here
+# ignore 'files'
 *.txt
+.env
 # END
 
-# ignore 'folders' here
+# ignore 'folders'
+node_modules
+dist
+# END
+
+# exclude ignored files
 
 # END
 
-# un-ignore exceptions here
-
-# END
+# ignore dotenv files, and exclude env vault
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
