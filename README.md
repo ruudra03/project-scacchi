@@ -5,6 +5,8 @@
 
 Currently the version available on the source control doesn't contain the 'dist' folder with assests and main JS server file.
 
+    NOTE: Run "npm i" to initialise node_modules if you are running the server fkr the first time. 
+
 To start the server on local machine run script:
     npm run dev
 
